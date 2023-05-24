@@ -1,8 +1,23 @@
+import React from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+// import { Provider } from 'react-redux';
+// import store from './state/store';
+import CountryList from './components/CountryList';
+import HolidayList from './components/HolidayList';
+import Header from './components/Header';
+
 function App() {
   return (
-    <div>
-
-    </div>
+  // <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Header />}>
+          <Route index element={<CountryList />} />
+          <Route path="/holidays/:codeAlpha2" element={<HolidayList />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  //  </Provider> */
   );
 }
 
