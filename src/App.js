@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-// import { Provider } from 'react-redux';
-// import store from './state/store';
+import { Provider } from 'react-redux';
+import store from './state/store';
 import CountryList from './components/CountryList';
 import HolidayList from './components/HolidayList';
 import Header from './components/Header';
 
 function App() {
   return (
-  // <Provider store={store}>
+  <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Header />}>
@@ -17,7 +17,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  //  </Provider> */
+   </Provider> 
   );
 }
 
