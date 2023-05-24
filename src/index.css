@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Montserrat:ital,wght@0,800;1,500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+  font-family: 'Gill Sans';
+  src: url("./fonts/Gill\ Alt\ One\ MT\ Bold.ttf");
+}
+
+:root {
+  --primary-color: #ec4c8a;
+  --sec-color: #4369b2;
+  --my-color: rgb(85 172 182);
+  --primary-font-fami: 'Gill Sans';
+  --sec-font-fami: 'Lato', sans-serif;
+  --bold-font-weight: bold;
+
+  /* --bold-font-size: bold; */
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font-fami);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+}
+
+.flex-spc-btwn {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}

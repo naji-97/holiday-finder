@@ -1,0 +1,51 @@
+.navbar {
+  padding: 30px;
+}
+
+.nav {
+  /* margin: ; */
+  padding: 5px 45px;
+  font-size: larger;
+}
+
+img.map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 0;
+
+  /* background-color: rgba(1, 1, 2, 0.1); */
+  background-color: rgba(1, 1, 2, 0.1);
+  filter: blur(1.5px);
+}
+
+.logo,
+.icons {
+  z-index: 0;
+  color: #fff;
+  font-size: larger;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.link-back {
+  margin: 30px 60px;
+}
+
+.back-home {
+  background-color: var(--sec-color);
+}
+
+.back-btn {
+  width: 50px;
+
+  /* padding: 20px 30px; */
+}
