@@ -34,7 +34,6 @@ const holidaySlice = createSlice({
       .addCase(fetchHolidaysByCountryAsync.pending, (state) => ({
         ...state,
         status: 'loading',
-
       }))
       .addCase(fetchHolidaysByCountryAsync.fulfilled, (state, action) => ({
         ...state,

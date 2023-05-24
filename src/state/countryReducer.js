@@ -7,7 +7,7 @@ export const fetchCountry = createAsyncThunk('countries/fetchCountry', async () 
     return data.map((country) => ({
       continent: country.continents[0],
       name: country.name.common,
-      capital: country.capital,
+      capital: Array.isArray(country.capital) ? country.capital[0] : String(country.capital),
       population: country.population,
       currencies: country.currencies,
       countryCode: country.cca2,
