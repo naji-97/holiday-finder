@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchHolidaysByCountryAsync } from '../state/holidayReducer';
 import { fetchCountry } from '../state/countryReducer';
 import HolidayList from './HolidayList';
 import Country from './Country';
-import "./styles/countryList.css"
-
+import './styles/countryList.css';
 
 const CountryList = () => {
   const dispatch = useDispatch();
-  const countries = useSelector(state => state.countries.countries);
-  const holidays = useSelector(state => state.holiday.holidays);
-  const location = useLocation();
+  const countries = useSelector((state) => state.countries.countries);
+  const holidays = useSelector((state) => state.holiday.holidays);
+  // const location = useLocation();
   // const [continent, setContinent] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -20,28 +19,25 @@ const CountryList = () => {
     if (countries.length === 0) {
       dispatch(fetchCountry());
     }
-  }, []);
+  }, [countries.length, dispatch]);
 
   const handleCountryClick = (countryCode) => {
-    const formattedCountryCode = countryCode.toLowerCase(); // Ensure the countryCode is in lowercase
+    const formattedCountryCode = countryCode.toLowerCase();
     dispatch(fetchHolidaysByCountryAsync(formattedCountryCode));
   };
 
-  const filteredCountries = countries.filter(country => {
-    // Perform case-insensitive search by converting both search query and country name to lowercase
-    return country.name.toLowerCase().includes(searchQuery.toLowerCase());
-  });
-
+  const filteredCountries = countries.filter((country) => country.name.toLowerCase()
+    .includes(searchQuery.toLowerCase()));
   return (
-    <div className='main'>
-      <div className='dropdown'>
-        <h1 className='title'>All Countries</h1>
+    <div className="main">
+      <div className="dropdown">
+        <h1 className="title">All Countries</h1>
         <input
           type="text"
           placeholder="Search country..."
           className=" select search-input"
           value={searchQuery}
-          onChange={e => setSearchQuery(e.target.value)}
+          onChange={(e) => setSearchQuery(e.target.value)}
         />
         {/* <select
           name='continents'
@@ -59,7 +55,7 @@ const CountryList = () => {
           <option value="North America">North America</option>
         </select> */}
       </div>
-      <ul className='countries'>
+      <ul className="countries">
         {filteredCountries.map((country) => (
           <Country
             key={country.countryCode}

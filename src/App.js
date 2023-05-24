@@ -8,16 +8,16 @@ import Header from './components/Header';
 
 function App() {
   return (
-  <Provider store={store}>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Header />}>
-          <Route index element={<CountryList />} />
-          <Route path="/holidays/:codeAlpha2" element={<HolidayList />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-   </Provider> 
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Header />}>
+            <Route index element={<CountryList />} />
+            <Route path="/holidays/:codeAlpha2" element={<HolidayList />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   );
 }
 
