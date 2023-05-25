@@ -7,27 +7,28 @@ function Country({
   name, continent, capital, population, flag, countryCode, handleCountryClick,
 }) {
   return (
-    <div className="container">
+    <div className="container" data-testid="country-info">
       <div className="wrap">
         <NavLink to={`/holidays/${countryCode}`} onClick={() => handleCountryClick(countryCode)} className="country">
-          <div className="info">
-            <p className="country-name">
-              Name :
-              {name}
+          <div className="info" data-testid="info">
+            <p className="country-name" data-testid="country-name">
+              Name:
+              { name}
             </p>
-            <p>
+            <p data-testid=" continent">
               {' '}
               Continent :
-              {continent}
+              { continent}
             </p>
-            <p>
+            <p data-testid="capital">
               {' '}
               Capital :
-              {capital}
+              {' '}
+              { capital}
             </p>
-            <p>
-              Population
-              {population}
+            <p data-testid="population">
+              Population :
+              { population}
             </p>
           </div>
           <div className="flag">
