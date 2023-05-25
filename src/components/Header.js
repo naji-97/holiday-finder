@@ -11,7 +11,7 @@ function Header() {
   return (
     <>
       {showHeader && (
-        <div className="navbar">
+        <div className="navbar" data-testid="navbar">
           <NavBar />
 
         </div>
