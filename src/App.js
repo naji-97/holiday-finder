@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Header />}>
             <Route index element={<CountryList />} />
-            <Route path="/holidays/:codeAlpha2" element={<HolidayList />} />
+            <Route path="/holidays/:countryCode" element={<HolidayList />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -8,7 +8,7 @@ function NavBar() {
     <div>
       <nav className="nav flex-spc-btwn">
         <img src={img} alt="Map" className="map" />
-        <h3 className="logo">Holiday Finder</h3>
+        <h2 className="logo">Holiday Finder</h2>
         <div className="icons flex-spc-btwn">
           <div className="iconOne">
             <BiMicrophone />

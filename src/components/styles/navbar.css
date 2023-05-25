@@ -19,13 +19,14 @@ img.map {
 
   /* background-color: rgba(1, 1, 2, 0.1); */
   background-color: rgba(1, 1, 2, 0.1);
-  filter: blur(0.5px);
+  filter: blur(1.5px);
 }
 
 .logo,
 .icons {
   z-index: 0;
   color: #fff;
+  font-size: larger;
 }
 
 .icons {
@@ -33,4 +34,18 @@ img.map {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+}
+
+.link-back {
+  margin: 30px 60px;
+}
+
+.back-home {
+  background-color: var(--sec-color);
+}
+
+.back-btn {
+  width: 50px;
+
+  /* padding: 20px 30px; */
 }
