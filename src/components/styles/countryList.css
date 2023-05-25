@@ -76,7 +76,7 @@
 }
 
 .info {
-  text-align: center;
+  text-align: start;
 }
 
 @media (min-width: 1200px) {
