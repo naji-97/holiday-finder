@@ -41,6 +41,12 @@
 
 - [Live Demo Link](https://naji-97.github.io/To-Do-list/?)
 
+<!-- Project documentation -->
+
+## description of the project <a name="live-demo"></a>
+
+- [Loom record](https://naji-97.github.io/To-Do-list/?)
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
