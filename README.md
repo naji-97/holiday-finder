@@ -167,8 +167,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Naji Ali**
 
 - GitHub: [@@Naji-97](https://github.com/naji-97/)
@@ -180,7 +178,6 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[bility to reserve hotels in the best places in the world]**
 - [ ] **[Budget estimation for travel]**
@@ -224,8 +221,5 @@ I would like to thank Microverse and Nelson Sakwa for the template design.
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
