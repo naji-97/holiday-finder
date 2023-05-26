@@ -80,7 +80,7 @@
 
 ## description of the project <a name="live-demo"></a>
 
-- [Loom record](https://naji-97.github.io/To-Do-list/?)
+- [Loom record](https://www.loom.com/share/8a6f61590f83405da65d382f722811c8)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
