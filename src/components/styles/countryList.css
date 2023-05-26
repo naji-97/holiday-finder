@@ -27,13 +27,13 @@
 }
 
 .countries {
-  margin-top: 280px;
+  margin-top: 255px;
   padding: 30px 20px;
   display: grid;
   gap: 10px;
   flex-direction: column;
   width: 100%;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   background-color: var(--my-color);
 }
@@ -48,10 +48,8 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-
-  /* background-color: var(--sec-color); */
   background: radial-gradient(circle at 10% 20%, rgba(234, 249, 249, 0.67) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
-  padding: 10px 29px;
+  padding: 10px;
   border-radius: 20px;
 }
 
@@ -82,5 +80,21 @@
 @media (min-width: 1200px) {
   .countries {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 280px;
+  }
+
+  .country {
+    padding: 10px 29px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+  .countries {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 280px;
+  }
+
+  .country {
+    padding: 10px 19px;
   }
 }
