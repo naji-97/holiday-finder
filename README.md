@@ -204,6 +204,7 @@ Feel free to check the [issues page](../../issues/).
 
 If you like this project please give it a ⭐️!
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -216,6 +217,8 @@ I would like to thank Microverse and Nelson Sakwa for the template design.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
@@ -223,5 +226,6 @@ I would like to thank Microverse and Nelson Sakwa for the template design.
 This project is [MIT](./LICENSE) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
